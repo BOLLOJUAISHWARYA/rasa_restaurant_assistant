@@ -1,0 +1,37 @@
+version: '3.1'
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+intents:
+  - affirm
+  - deny
+  - goodbye
+  - greet
+  - name_entry
+  - food
+
+responses:
+  utter_greet:
+    - text: Hello, am June your food assistant.
+    
+  utter_order_request:
+    - text: would you like to order something?
+    
+  utter_menu:
+    - text: We have pizza's,juices,burger.
+  
+  utter_ask:
+    - text: what shall I order?
+    
+  utter_order:
+    - text: We have received your request.You shall receive confirmation mail soon.
+    
+  utter_gratitude:
+    - text: Thanks for ordering with us :)
+    
+  utter_goodbye:
+    - text: Bye
+
+
